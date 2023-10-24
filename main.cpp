@@ -51,7 +51,7 @@ int GCD(){
     if((firstNum % 7 == 0) && (secondNum % 7 == 0)){
         gcd *= 7;
         firstNum /= 7;
-        secondNum /= 7;                                                     //не закончено
+        secondNum /= 7;                                                     //Not finished
     }else if(firstNum % 5 == 0 && secondNum % 5 == 0){
         return 5;
     }else if(firstNum % 3 == 0 && secondNum % 3 == 0){

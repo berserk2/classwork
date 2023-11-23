@@ -89,11 +89,11 @@ void test()
 	int n = 3;
 	int numbersForTestTwo[3][3] = {2,3,2,0,6,7,9,2,0};
 	int** testOne = (int**)malloc(n * sizeof(int*));
-	int** testTwo = (int**)malloc(n * sizeof(int*));		//по окончании цикла
-	for (int i = 0; i < n; i++)								//матрица будет выглядеть так:
-	{														//| 1	2	3 |
-		testOne[i] = (int*)malloc(n * sizeof(int));			//| 2	3	4 |
-		for (int j = 0; j < n; j++)							//| 3	4	5 |
+	int** testTwo = (int**)malloc(n * sizeof(int*));			//по окончании цикла
+	for (int i = 0; i < n; i++)						//матрица будет выглядеть так:
+	{									//| 1 2 3 |
+		testOne[i] = (int*)malloc(n * sizeof(int));			//| 2 3 4 |
+		for (int j = 0; j < n; j++)					//| 3 4 5 |
 		{
 			testOne[i][j] = i + j + 1;						
 		}
@@ -106,11 +106,11 @@ void test()
 	else
 	{
 		printf("fail!\n");
-	}														//по окончании цикла
-	for (int i = 0; i < n; i++)								//матрица будет выглядеть так:
-	{														//| 2	3	2 |
-		testTwo[i] = (int*)malloc(n * sizeof(int));			//| 0	6	7 |
-		for (int j = 0; j < n; j++)							//| 9	2	0 |
+	}									//по окончании цикла
+	for (int i = 0; i < n; i++)						//матрица будет выглядеть так:
+	{									//| 2 3 2 |
+		testTwo[i] = (int*)malloc(n * sizeof(int));			//| 0 6 7 |
+		for (int j = 0; j < n; j++)					//| 9 2 0 |
 		{
 			testTwo[i][j] = numbersForTestTwo[i][j];
 		}

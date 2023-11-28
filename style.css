@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "consolas";
+    margin: 0;
+    background:linear-gradient(to top, #555254,#111);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+a{
+    
+    color:#00ff99;
+    text-decoration:none;
+}
+h3{
+    
+    color: #379369;
+    font-weight: 123;
+    font-style: italic;
+}
+p{
+    color: #167;
+}
+footer{
+    color: wheat;
+}
+#box11{
+    background:linear-gradient(to right, #379369,#167);
+    width: 270px;
+    border-radius: 100px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#end{
+    text-align: center;
+}
